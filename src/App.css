@@ -1,38 +1,153 @@
-.App {
-  text-align: center;
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	width: 100%;
+	height: 100%;
+	color: white;
+	background-color: black;
+	font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#about {
+	background-color: black;
+}
+h1 {
+	font-family: "Cabin", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 80px;
+	font-weight: 700;
+	letter-spacing: 6.5px;
+	text-transform: uppercase;
+}
+h2 {
+	font-family: "Cabin", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 35px;
+	font-weight: 700;
+	letter-spacing: 2.5px;
+	text-transform: uppercase;
+}
+p {
+	font-size: 18px;
+	line-height: 35px;
+	padding-bottom: 25px;
+}
+a {
+	color: #f477ec;
+	transition: all 0.3s ease-in-out;
+}
+a:hover {
+	text-decoration: none;
+	color: #ef8de9;
+}
+#mainNav {
+	font-family: "Cabin", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+	text-transform: uppercase;
+	margin-bottom: 0px;
+	background-color: black;
+	padding: 15px;
+}
+#mainNav .navbar-toggler {
+	font-size: 14px;
+	padding: 11px;
+	color: white;
+	border: 1px solid white;
+	background: black;
+	border-radius: 6px;
+	display: none;
+}
+.navbar-brand {
+	font-size: 25px;
+}
+#mainNav a {
+	color: white;
+}
+.navbar-nav {
+	list-style: none;
+	margin: 12px auto;
+	float: right;
+	font-size: 20px;
+}
+.nav-item {
+	padding: 0 5px 0 30px;
+}
+.nav-link:hover {
+	color: #ef8de9 !important;
+}
+header {
+	text-align: center;
+	height: auto;
+	width: 100%;
+	background: url(https://blackrockdigital.github.io/startbootstrap-grayscale/img/intro-bg.jpg)
+		no-repeat bottom center scroll;
+	background-size: cover;
+	color: white;
+	padding: 200px 0;
+}
+header a {
+	color: white;
+	font-family: "Cabin", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.btn {
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.btn-circle {
+	font-size: 28px;
+	height: 55px;
+	width: 55px;
+	line-height: 45px;
+	border: 2px solid white;
+	border-radius: 100%;
+	margin-top: 20px;
+	background: transparent;
+	transition: all 0.3s ease-in-out;
+}
+.btn-circle:focus,
+.btn-circle:hover {
+	color: white;
+	outline: none;
+	background: rgba(255, 255, 255, 0.1);
+}
+.content-section {
+	padding: 120px 0;
+}
+.download-section {
+	height: auto;
+	width: 100%;
+	background: url(https://blackrockdigital.github.io/startbootstrap-grayscale/img/downloads-bg.jpg)
+		no-repeat center center scroll;
+	background-size: cover;
+}
+.btn-default {
+	border: 1px solid #f477ec;
+	font-size: 18px;
+	background: transparent;
+	color: #f477ec;
+	border-radius: 10px;
+}
+.btn-default:focus,
+.btn-default:hover {
+	color: black;
+	border: 1px solid #f477ec;
+	outline: none;
+	background-color: #f477ec;
+}
+/* #map{
+  height:100vh;
+  width:100%;
+} */
+footer p {
+	font-size: 15px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.clearfix:before,
+.clearfix:after {
+	display: table;
+	content: "";
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.clearfix:after {
+	clear: both;
 }
