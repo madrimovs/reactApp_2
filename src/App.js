@@ -6,12 +6,12 @@ import Navbar from "./Components/Navbar/Navbar";
 
 function App() {
 	return (
-		<body id="topPage">
+		<div id="topPage">
 			<Navbar></Navbar>
 			<Header></Header>
 			<Main></Main>
 			<Footer></Footer>
-		</body>
+		</div>
 	);
 }
 
